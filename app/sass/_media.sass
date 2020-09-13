@@ -1,0 +1,296 @@
+@import "vars"
+
+@media (max-width: 1200px)
+  header 
+    .navbar
+      width: 100%
+      padding: 0 30px
+      .navbar-collapse
+        padding-left: 0
+      .navbar-nav
+        display: none
+      .navbar-collapse 
+        display: flex !important
+        justify-content: flex-end
+        align-items: center
+        flex-basis: auto
+        .right-block-nav 
+          padding-left: 0
+          .right-block-nav__phone
+            .phone-number
+              display: none
+          .right-nav-list 
+            a 
+              .header-icon
+                width: 24px
+                height: 24px
+          .right-block-nav__btn-menu 
+            #burger-button 
+              .header-icon
+                width: 20px!important
+                height: 20px!important 
+
+  section
+    margin: 24px 30px 36px 
+    .content
+      margin-top: 21px  
+      .buy-fly 
+        .one-fly  
+          flex-direction: column
+          align-items: flex-start
+        .one-fly__price-btn  
+          width: 100%  
+      .sale-code 
+        .first-line 
+          .first-line-input 
+            width: 50%
+            margin-right: 30px  
+          .btn-sale
+            width: 50%
+        .second-line
+          .sale-price
+            width: 50%
+            margin-right: 30px
+          .btn-next-step
+            width: 50%   
+
+  footer
+    padding: 0 30px 33px  
+  .row-info-footer 
+    .footer-copiryte 
+      p:last-child
+        display: none
+    .footer-logo-company-pay 
+      display: none
+
+@media (max-width: 1024px)  
+  section 
+    .link-steps 
+      .link-step
+        font: normal 600 14px/27px $default-font
+        padding: 8.5px
+
+  section 
+    .link-steps 
+      .link-step:first-child::after
+        border-top: 25px solid transparent
+        border-bottom: 25px solid transparent     
+
+@media (max-width: 991px)  
+  .collapse
+    display: flex
+  section 
+    .content 
+      .buy-fly 
+        .one-fly__name
+          margin-bottom: 20px
+          margin-right: 0px
+          width: 100%
+          max-width: 100% 
+          text-align: center                       
+  
+@media (max-width: 768px)   
+  section 
+    .link-steps 
+      .link-step
+        font: normal 600 12px/27px $default-font
+        padding: 3.5px
+
+  section 
+    .link-steps 
+      .link-step:first-child::after
+        border-top: 20px solid transparent
+        border-bottom: 20px solid transparent    
+
+@media (max-width: 767px) 
+  header 
+    .navbar 
+      .navbar-collapse 
+        .right-slide-menu
+          max-width: 100%
+          top: 80px
+
+  section 
+    .link-steps 
+      .link-step
+        display: none
+      .link-step:first-child
+        display: flex 
+        width: 100%
+
+  header
+    height: 80px      
+
+  section 
+    .content 
+      padding: 30px
+      .buy-fly 
+        .one-fly
+          position: relative
+          .one-fly__name
+            font: normal 600 20px/24px $default-font
+          .one-fly__price-btn 
+            flex-direction: column
+            align-items: center
+            justify-content: center 
+            .day-work
+              flex-direction: column
+              justify-content: center
+              align-items: center
+              margin-bottom: 20px
+              p
+                margin-bottom: 5px
+                text-align: center
+                font: normal 600 16px/19px ProximaNova,sans-serif
+              p:last-child 
+                margin-bottom: 0   
+              p:first-child
+                margin-right: 0                            
+            .btn-group
+              margin-left: 0
+              justify-content: center
+              align-items: center
+              position: static
+              .delete-line
+                background-color: transparent
+                margin-left: 0
+                position: absolute 
+                top: 0
+                right: 0 
+                padding: 0    
+      .btn-info-fly
+        padding: 30px 0
+      .sale-code 
+        padding: 30px 0 0
+        .first-line      
+          flex-direction: column 
+          .first-line-input
+            width: 100%
+            margin-right: 0
+            margin-bottom: 10px
+          .btn-sale
+            width: 100%
+            min-width: 100%
+            text-align: center
+        .second-line
+          margin-top: 40px 
+          flex-direction: column 
+          .sale-price
+            width: 100%
+            margin-right: 0
+            margin-bottom: 30px   
+            font: normal 600 20px/24px ProximaNova,sans-serif   
+            text-align: center            
+          .btn-next-step
+            width: 100%
+            min-width: 100%
+            text-align: center
+
+  footer
+    padding: 73px 30px 24px  
+    .row-logo
+      justify-content: center
+    .row-nav-footer
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      .group
+        text-align: center
+        .nav-footer li:last-child
+          margin-bottom: 34px
+    .row-info-footer
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin-right: 0
+      margin-left: 0
+      .footer-copiryte
+        text-align: center
+        align-items: center
+        justify-content: center
+        width: 100%  
+      .develop-company  
+        text-align: center
+        align-items: center
+        justify-content: center
+        width: 100%  
+        margin-right: 0 
+
+  header 
+    .navbar 
+      .navbar-collapse 
+        width: 50%  
+
+  section 
+    .content 
+      .btn-info-fly__date 
+        a         
+          padding: 15px
+          width: 100%
+
+@media (max-width: 500px)    
+  header 
+    .navbar 
+      .navbar-collapse 
+        .right-block-nav 
+          .right-nav-list  
+            padding-left: 20px
+    .navbar-brand
+      img
+        width: 50%  
+
+  footer 
+    .row-nav-footer 
+      .info-social-btn 
+        .social-btn 
+          flex-direction: column
+          align-items: center
+          justify-content: center 
+          .social-icon
+            margin-right: 0
+            margin-bottom: 15px
+          .social-icon:last-child 
+            margin-bottom: 0  
+
+  section 
+    .content 
+      .buy-fly 
+        .one-fly__price-btn 
+          .btn-group 
+            .delete-line 
+              .content-icon
+                width: 15px
+                height: 15px         
+
+@media (max-width: 414px)        
+  header 
+    .navbar 
+      .navbar-collapse
+        width: 40%  
+        
+  section 
+    .content 
+      .buy-fly 
+        .one-fly__name
+          padding: 0 15px     
+
+  footer 
+    .row-logo
+      img
+        width: 50%
+        margin: 0 auto
+        display: flex
+    .row-info-footer 
+      .develop-company   
+        flex-direction: column   
+
+@media (max-width: 320px)        
+  header 
+    .navbar 
+      .navbar-collapse 
+        width: 20%
+        .right-block-nav 
+          .right-nav-list
+            display: none
+          .right-nav-list:last-child
+            display: flex                      
