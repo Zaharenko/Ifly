@@ -29,6 +29,17 @@
               .header-icon
                 width: 20px!important
                 height: 20px!important 
+  section 
+    .link-steps 
+      .link-step
+        font: normal 600 14px/27px $default-font
+        padding: 8.5px
+
+  section 
+    .link-steps 
+      .link-step:first-child::after
+        border-top: 25px solid transparent
+        border-bottom: 25px solid transparent              
 
   section
     margin: 24px 30px 36px 
@@ -62,21 +73,18 @@
         display: none
     .footer-logo-company-pay 
       display: none
+       
 
-@media (max-width: 1024px)  
+@media (max-width: 991px)  
   section 
     .link-steps 
       .link-step
-        font: normal 600 14px/27px $default-font
-        padding: 8.5px
-
-  section 
-    .link-steps 
+        padding: 3.5px
+        font: normal 600 12px/27px $default-font
       .link-step:first-child::after
-        border-top: 25px solid transparent
-        border-bottom: 25px solid transparent     
+        border-top: 20px solid transparent
+        border-bottom: 20px solid transparent  
 
-@media (max-width: 991px)  
   .collapse
     display: flex
   section 
@@ -284,7 +292,7 @@
       .develop-company   
         flex-direction: column   
 
-@media (max-width: 320px)        
+@media (max-width: 374px)        
   header 
     .navbar 
       .navbar-collapse 
